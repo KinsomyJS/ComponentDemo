@@ -1,0 +1,22 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "ComponentDemo"
+include ':app'
+include ':biz_component_a_api'
+include ':biz_component_a_impl'
+include ':biz_component_b_api'
+include ':biz_component_b_impl'
+include ':lib_common'
+include ':lib_component_center'
